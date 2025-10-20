@@ -1,0 +1,5 @@
+# algo: ppo
+# n_staps: 1024
+# batch_size: 256
+# n_epochs: 10
+# learning_rate: 3e-4
