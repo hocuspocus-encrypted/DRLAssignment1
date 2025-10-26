@@ -22,20 +22,20 @@ Collect in-game and app-level metrics automatically per episode and aggregate th
 ````
 tetris/
 │
-├─ envs/ # Custom Gymnasium environments
-│ ├─ tetris_env.py # Tetris game environment + reward shaping
-│ └─ web_env.py # Web flow automation (Selenium/Playwright)
+├─ envs/ # Gymnasium environment
+│ └─ tetris_env.py # Tetris game environment + reward shaping
 │
 ├─ src/ # Core framework
 │ ├─ train.py # Training script (PPO, A2C)
 │ ├─ eval.py # Evaluation script (metrics, model replay)
 │ ├─ utils.py # Helpers (env builder, seed fixing, wrappers)
+  ├─ wrappers.py # Evaluation script (metrics, model replay)
 │ └─ metrics.py # Logger exporting CSV + JSON
 │
 ├─ models/ # Saved trained models (.zip)
 ├─ logs/ # TensorBoard + evaluation metrics
-├─ configs/ # Optional YAML/Hydra configs
-├─ notebooks/ # Analysis notebooks and visualizations
+├─ configs/ # YAML configs
+├─ notebooks/ # Analysis and visualizations
 └─ README.md
 ````
 
@@ -53,9 +53,7 @@ The codebase is fully **decoupled** between environment definitions, training lo
 - Pygame, Numpy, TensorBoard, Matplotlib
 
 ### Installation
-```bash
-git clone https://github.com/<your-username>/drl-automated-testing.git
-cd drl-automated-testing
+```
 python -m venv .venv
 .\.venv\Scripts\activate  # (Windows)
 pip install -r requirements.txt
@@ -63,28 +61,32 @@ pip install -r requirements.txt
 ##  Training
 ### Example: PPO on Tetris
 ````
-python -m src.train --algo ppo --app tetris --persona survivor \
-  --steps 500000 --device cuda --frame_stack 4 --seed 7 \
+python -m src.train --algo ppo --app tetris --persona survivor
+ --steps 500000 --device cuda --frame_stack 4 --seed 7
   --save models/ppo_tetris_survivor
 ````
 
 ### Example: A2C on Tetris
 ````
-python -m src.train --algo a2c --app tetris --persona explorer \
-  --steps 500000 --device cuda --frame_stack 4 \
-  --a2c_n_steps 32 --save models/a2c_tetris_explorer
+python -m src.train --algo a2c --app tetris --persona explorer 
+--steps 500000 --device cuda --frame_stack 4 
+--a2c_n_steps 32 --save models/a2c_tetris_explorer
 ````
 
-### Example: Web App (CPU preferred)
-````
-python -m src.train --algo ppo --app web --persona survivor --steps 200000 --device cpu
-````
+[//]: # ()
+[//]: # (### Example: Web App &#40;CPU preferred&#41;)
+
+[//]: # (````)
+
+[//]: # (python -m src.train --algo ppo --app web --persona survivor --steps 200000 --device cpu)
+
+[//]: # (````)
 
 ##  Evaluation
 Run trained agents and collect metrics (CSV + JSON):
 ````
-python -m src.eval --algo ppo --app tetris --persona survivor \
-  --model models/ppo_tetris_survivor.zip --episodes 30 --device cuda --frame_stack 4
+python -m src.eval --algo ppo --app tetris --persona survivor 
+--model models/ppo_tetris_survivor.zip --episodes 30 --device cuda --frame_stack 4
 ````
 All results are stored under:
 ````
@@ -93,7 +95,7 @@ logs/
  ├─ eval/
  │   ├─ tetris-ppo-survivor-7.json
  │   └─ tetris-ppo-survivor-7.csv
- └─ screenshots/              # optional gameplay captures
+ └─ eval_summary.csv
 ````
 ##  Personas (Reward Designs)
 | Persona  |                Description                |                  Reward Signal                  |
@@ -144,20 +146,24 @@ PPO agents demonstrate smoother and more stable learning, achieving higher episo
 
 ### Train PPO
 ````
-python -m src.train --algo ppo --app tetris --persona survivor --steps 500000 --seed 7 --device cuda
+python -m src.train --algo ppo --app tetris --persona survivor --steps 500000
+ --seed 7 --device cuda
 ````
 ### Train A2C
 ````
-python -m src.train --algo a2c --app tetris --persona survivor --steps 500000 --frame-stack 4 --device cpu --seed 42 --save models/a2c_tetris_survivor
+python -m src.train --algo a2c --app tetris --persona survivor --steps 500000
+ --frame-stack 4 --device cpu --seed 42 --save models/a2c_tetris_survivor
 ````
 
 ### Evaluate PPO
 ````
-python -m src.eval  --algo ppo --app tetris --persona survivor --model models/ppo_tetris_survivor.zip --episodes 30 --device cuda
+python -m src.eval  --algo ppo --app tetris --persona survivor 
+--model models/ppo_tetris_survivor.zip --episodes 30 --device cuda
 ````
 ### Evaluate A2C
 ````
-python -m src.eval --algo a2c --app tetris --persona survivor --model models/a2c_tetris_survivor.zip --episodes 30 --frame-stack 4 --device cpu
+python -m src.eval --algo a2c --app tetris --persona survivor 
+--model models/a2c_tetris_survivor.zip --episodes 30 --frame-stack 4 --device cpu
 ````
 
 ### Visualize PPO Gameplay
