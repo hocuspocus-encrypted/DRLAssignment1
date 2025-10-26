@@ -10,7 +10,7 @@ except Exception:
     from gym import spaces
 
 try:
-    from tetris.tetris_gym import TetrisEnv as BaseTetris
+    from DRLAssignment1.tetris_gym import TetrisEnv as BaseTetris
 except Exception:
     BaseTetris = None
 

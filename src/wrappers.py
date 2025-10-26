@@ -7,7 +7,7 @@ except Exception:
 import numpy as np
 
 class CastObsToFloat32(gym.ObservationWrapper):
-    """Cast HWC observations to float32 in [0,1] so SB3's CnnPolicy accepts them."""
+    # Cast observations to float32 in [0,1] so SB3's CnnPolicy accepts them.
     def __init__(self, env):
         super().__init__(env)
         low  = 0.0

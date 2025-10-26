@@ -62,7 +62,7 @@ class MetricsLogger:
                 row[k] = _to_py(v)
             data.append(row)
 
-        # atomic write to avoid partial JSON
+        # write to avoid partial JSON
         os.makedirs(os.path.dirname(self.json_path), exist_ok=True)
         tmp_fd, tmp_path = tempfile.mkstemp(prefix="metrics_", suffix=".json", dir=os.path.dirname(self.json_path))
         os.close(tmp_fd)

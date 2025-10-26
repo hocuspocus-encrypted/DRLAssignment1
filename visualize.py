@@ -2,7 +2,7 @@ import argparse
 from stable_baselines3 import PPO, A2C
 from stable_baselines3.common.vec_env import DummyVecEnv, VecFrameStack
 
-from src.tetris_gym import TetrisEnv
+from tetris_gym import TetrisEnv
 import gymnasium as gym
 from gymnasium import spaces
 import numpy as np

@@ -2,8 +2,7 @@ from __future__ import annotations
 import argparse, sys,os
 from stable_baselines3 import PPO, A2C
 from tetris.src.utils import build_env, set_seed
-from tetris.src.metrics import MetricsLogger
-import pandas as pd, matplotlib.pyplot as plt
+from DRLAssignment1.src.metrics import MetricsLogger
 
 ROOT_DIR = os.path.dirname(os.path.dirname(__file__))
 os.chdir(ROOT_DIR)
