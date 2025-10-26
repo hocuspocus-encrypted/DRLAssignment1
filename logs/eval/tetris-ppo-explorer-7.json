@@ -1,0 +1,932 @@
+[
+  {
+    "episode": 0,
+    "reward": 2.522002696990967,
+    "length": 99,
+    "episode_reward": [
+      2.522002696990967
+    ],
+    "episode_length": 99,
+    "lines": 0,
+    "hard_drops": 21,
+    "rotations": 10,
+    "left_moves": 32,
+    "right_moves": 34,
+    "soft_drops": ""
+  },
+  {
+    "episode": 1,
+    "reward": 3.7519965171813965,
+    "length": 70,
+    "episode_reward": [
+      3.7519965171813965
+    ],
+    "episode_length": 70,
+    "lines": 1,
+    "hard_drops": 20,
+    "rotations": 4,
+    "left_moves": 22,
+    "right_moves": 18,
+    "soft_drops": ""
+  },
+  {
+    "episode": 2,
+    "reward": 3.6004958152770996,
+    "length": 103,
+    "episode_reward": [
+      3.6004958152770996
+    ],
+    "episode_length": 103,
+    "lines": 0,
+    "hard_drops": 24,
+    "rotations": 6,
+    "left_moves": 31,
+    "right_moves": 42,
+    "soft_drops": ""
+  },
+  {
+    "episode": 3,
+    "reward": 3.6874961853027344,
+    "length": 90,
+    "episode_reward": [
+      3.6874961853027344
+    ],
+    "episode_length": 90,
+    "lines": 0,
+    "hard_drops": 25,
+    "rotations": 6,
+    "left_moves": 28,
+    "right_moves": 31,
+    "soft_drops": ""
+  },
+  {
+    "episode": 4,
+    "reward": 3.332998275756836,
+    "length": 98,
+    "episode_reward": [
+      3.332998275756836
+    ],
+    "episode_length": 98,
+    "lines": 0,
+    "hard_drops": 24,
+    "rotations": 8,
+    "left_moves": 31,
+    "right_moves": 35,
+    "soft_drops": ""
+  },
+  {
+    "episode": 5,
+    "reward": 3.5764989852905273,
+    "length": 95,
+    "episode_reward": [
+      3.5764989852905273
+    ],
+    "episode_length": 95,
+    "lines": 0,
+    "hard_drops": 24,
+    "rotations": 9,
+    "left_moves": 31,
+    "right_moves": 31,
+    "soft_drops": ""
+  },
+  {
+    "episode": 6,
+    "reward": 3.092503547668457,
+    "length": 94,
+    "episode_reward": [
+      3.092503547668457
+    ],
+    "episode_length": 94,
+    "lines": 0,
+    "hard_drops": 23,
+    "rotations": 3,
+    "left_moves": 32,
+    "right_moves": 36,
+    "soft_drops": ""
+  },
+  {
+    "episode": 7,
+    "reward": 3.3134984970092773,
+    "length": 89,
+    "episode_reward": [
+      3.3134984970092773
+    ],
+    "episode_length": 89,
+    "lines": 0,
+    "hard_drops": 24,
+    "rotations": 2,
+    "left_moves": 26,
+    "right_moves": 37,
+    "soft_drops": ""
+  },
+  {
+    "episode": 8,
+    "reward": 2.3985066413879395,
+    "length": 102,
+    "episode_reward": [
+      2.3985066413879395
+    ],
+    "episode_length": 102,
+    "lines": 0,
+    "hard_drops": 13,
+    "rotations": 28,
+    "left_moves": 15,
+    "right_moves": 40,
+    "soft_drops": ""
+  },
+  {
+    "episode": 9,
+    "reward": 3.359999179840088,
+    "length": 79,
+    "episode_reward": [
+      3.359999179840088
+    ],
+    "episode_length": 79,
+    "lines": 0,
+    "hard_drops": 23,
+    "rotations": 4,
+    "left_moves": 21,
+    "right_moves": 31,
+    "soft_drops": ""
+  },
+  {
+    "episode": 10,
+    "reward": 3.6229968070983887,
+    "length": 91,
+    "episode_reward": [
+      3.6229968070983887
+    ],
+    "episode_length": 91,
+    "lines": 0,
+    "hard_drops": 25,
+    "rotations": 4,
+    "left_moves": 28,
+    "right_moves": 34,
+    "soft_drops": ""
+  },
+  {
+    "episode": 11,
+    "reward": 4.8434929847717285,
+    "length": 89,
+    "episode_reward": [
+      4.8434929847717285
+    ],
+    "episode_length": 89,
+    "lines": 1,
+    "hard_drops": 24,
+    "rotations": 10,
+    "left_moves": 31,
+    "right_moves": 24,
+    "soft_drops": ""
+  },
+  {
+    "episode": 12,
+    "reward": 2.8330039978027344,
+    "length": 90,
+    "episode_reward": [
+      2.8330039978027344
+    ],
+    "episode_length": 90,
+    "lines": 0,
+    "hard_drops": 20,
+    "rotations": 18,
+    "left_moves": 20,
+    "right_moves": 28,
+    "soft_drops": ""
+  },
+  {
+    "episode": 13,
+    "reward": 3.2780003547668457,
+    "length": 95,
+    "episode_reward": [
+      3.2780003547668457
+    ],
+    "episode_length": 95,
+    "lines": 0,
+    "hard_drops": 23,
+    "rotations": 10,
+    "left_moves": 29,
+    "right_moves": 33,
+    "soft_drops": ""
+  },
+  {
+    "episode": 14,
+    "reward": 2.737004280090332,
+    "length": 87,
+    "episode_reward": [
+      2.737004280090332
+    ],
+    "episode_length": 87,
+    "lines": 0,
+    "hard_drops": 21,
+    "rotations": 5,
+    "left_moves": 33,
+    "right_moves": 28,
+    "soft_drops": ""
+  },
+  {
+    "episode": 15,
+    "reward": 2.812504768371582,
+    "length": 98,
+    "episode_reward": [
+      2.812504768371582
+    ],
+    "episode_length": 98,
+    "lines": 0,
+    "hard_drops": 20,
+    "rotations": 1,
+    "left_moves": 30,
+    "right_moves": 34,
+    "soft_drops": ""
+  },
+  {
+    "episode": 16,
+    "reward": 3.1285018920898438,
+    "length": 92,
+    "episode_reward": [
+      3.1285018920898438
+    ],
+    "episode_length": 92,
+    "lines": 0,
+    "hard_drops": 25,
+    "rotations": 9,
+    "left_moves": 26,
+    "right_moves": 32,
+    "soft_drops": ""
+  },
+  {
+    "episode": 17,
+    "reward": 3.47299861907959,
+    "length": 84,
+    "episode_reward": [
+      3.47299861907959
+    ],
+    "episode_length": 84,
+    "lines": 0,
+    "hard_drops": 26,
+    "rotations": 3,
+    "left_moves": 27,
+    "right_moves": 28,
+    "soft_drops": ""
+  },
+  {
+    "episode": 18,
+    "reward": 2.9980039596557617,
+    "length": 88,
+    "episode_reward": [
+      2.9980039596557617
+    ],
+    "episode_length": 88,
+    "lines": 0,
+    "hard_drops": 24,
+    "rotations": 10,
+    "left_moves": 18,
+    "right_moves": 36,
+    "soft_drops": ""
+  },
+  {
+    "episode": 19,
+    "reward": 4.547991752624512,
+    "length": 102,
+    "episode_reward": [
+      4.547991752624512
+    ],
+    "episode_length": 102,
+    "lines": 1,
+    "hard_drops": 22,
+    "rotations": 17,
+    "left_moves": 30,
+    "right_moves": 33,
+    "soft_drops": ""
+  },
+  {
+    "episode": 20,
+    "reward": 3.028503894805908,
+    "length": 99,
+    "episode_reward": [
+      3.028503894805908
+    ],
+    "episode_length": 99,
+    "lines": 0,
+    "hard_drops": 22,
+    "rotations": 3,
+    "left_moves": 28,
+    "right_moves": 40,
+    "soft_drops": ""
+  },
+  {
+    "episode": 21,
+    "reward": 2.4865059852600098,
+    "length": 93,
+    "episode_reward": [
+      2.4865059852600098
+    ],
+    "episode_length": 93,
+    "lines": 0,
+    "hard_drops": 17,
+    "rotations": 9,
+    "left_moves": 23,
+    "right_moves": 25,
+    "soft_drops": ""
+  },
+  {
+    "episode": 22,
+    "reward": 3.870495319366455,
+    "length": 89,
+    "episode_reward": [
+      3.870495319366455
+    ],
+    "episode_length": 89,
+    "lines": 0,
+    "hard_drops": 26,
+    "rotations": 1,
+    "left_moves": 24,
+    "right_moves": 38,
+    "soft_drops": ""
+  },
+  {
+    "episode": 23,
+    "reward": 2.9050040245056152,
+    "length": 85,
+    "episode_reward": [
+      2.9050040245056152
+    ],
+    "episode_length": 85,
+    "lines": 0,
+    "hard_drops": 21,
+    "rotations": 4,
+    "left_moves": 20,
+    "right_moves": 38,
+    "soft_drops": ""
+  },
+  {
+    "episode": 24,
+    "reward": 3.6539974212646484,
+    "length": 84,
+    "episode_reward": [
+      3.6539974212646484
+    ],
+    "episode_length": 84,
+    "lines": 0,
+    "hard_drops": 25,
+    "rotations": 5,
+    "left_moves": 22,
+    "right_moves": 31,
+    "soft_drops": ""
+  },
+  {
+    "episode": 25,
+    "reward": 3.242001533508301,
+    "length": 96,
+    "episode_reward": [
+      3.242001533508301
+    ],
+    "episode_length": 96,
+    "lines": 0,
+    "hard_drops": 24,
+    "rotations": 11,
+    "left_moves": 23,
+    "right_moves": 38,
+    "soft_drops": ""
+  },
+  {
+    "episode": 26,
+    "reward": 2.927504062652588,
+    "length": 99,
+    "episode_reward": [
+      2.927504062652588
+    ],
+    "episode_length": 99,
+    "lines": 0,
+    "hard_drops": 20,
+    "rotations": 17,
+    "left_moves": 22,
+    "right_moves": 26,
+    "soft_drops": ""
+  },
+  {
+    "episode": 27,
+    "reward": 2.79500150680542,
+    "length": 57,
+    "episode_reward": [
+      2.79500150680542
+    ],
+    "episode_length": 57,
+    "lines": 0,
+    "hard_drops": 19,
+    "rotations": 4,
+    "left_moves": 19,
+    "right_moves": 15,
+    "soft_drops": ""
+  },
+  {
+    "episode": 28,
+    "reward": 3.0145039558410645,
+    "length": 85,
+    "episode_reward": [
+      3.0145039558410645
+    ],
+    "episode_length": 85,
+    "lines": 0,
+    "hard_drops": 22,
+    "rotations": 8,
+    "left_moves": 19,
+    "right_moves": 36,
+    "soft_drops": ""
+  },
+  {
+    "episode": 29,
+    "reward": 3.589498996734619,
+    "length": 81,
+    "episode_reward": [
+      3.589498996734619
+    ],
+    "episode_length": 81,
+    "lines": 0,
+    "hard_drops": 24,
+    "rotations": 4,
+    "left_moves": 27,
+    "right_moves": 26,
+    "soft_drops": ""
+  },
+  {
+    "episode": 30,
+    "reward": 5.010992050170898,
+    "length": 100,
+    "episode_reward": [
+      5.010992050170898
+    ],
+    "episode_length": 100,
+    "lines": 1,
+    "hard_drops": 26,
+    "rotations": 11,
+    "left_moves": 30,
+    "right_moves": 33,
+    "soft_drops": ""
+  },
+  {
+    "episode": 0,
+    "reward": 2.522002696990967,
+    "length": 99,
+    "episode_reward": [
+      2.522002696990967
+    ],
+    "episode_length": 99,
+    "lines": 0,
+    "hard_drops": 21,
+    "rotations": 10,
+    "left_moves": 32,
+    "right_moves": 34,
+    "soft_drops": ""
+  },
+  {
+    "episode": 1,
+    "reward": 3.7519965171813965,
+    "length": 70,
+    "episode_reward": [
+      3.7519965171813965
+    ],
+    "episode_length": 70,
+    "lines": 1,
+    "hard_drops": 20,
+    "rotations": 4,
+    "left_moves": 22,
+    "right_moves": 18,
+    "soft_drops": ""
+  },
+  {
+    "episode": 2,
+    "reward": 3.6004958152770996,
+    "length": 103,
+    "episode_reward": [
+      3.6004958152770996
+    ],
+    "episode_length": 103,
+    "lines": 0,
+    "hard_drops": 24,
+    "rotations": 6,
+    "left_moves": 31,
+    "right_moves": 42,
+    "soft_drops": ""
+  },
+  {
+    "episode": 3,
+    "reward": 3.6874961853027344,
+    "length": 90,
+    "episode_reward": [
+      3.6874961853027344
+    ],
+    "episode_length": 90,
+    "lines": 0,
+    "hard_drops": 25,
+    "rotations": 6,
+    "left_moves": 28,
+    "right_moves": 31,
+    "soft_drops": ""
+  },
+  {
+    "episode": 4,
+    "reward": 3.332998275756836,
+    "length": 98,
+    "episode_reward": [
+      3.332998275756836
+    ],
+    "episode_length": 98,
+    "lines": 0,
+    "hard_drops": 24,
+    "rotations": 8,
+    "left_moves": 31,
+    "right_moves": 35,
+    "soft_drops": ""
+  },
+  {
+    "episode": 5,
+    "reward": 3.5764989852905273,
+    "length": 95,
+    "episode_reward": [
+      3.5764989852905273
+    ],
+    "episode_length": 95,
+    "lines": 0,
+    "hard_drops": 24,
+    "rotations": 9,
+    "left_moves": 31,
+    "right_moves": 31,
+    "soft_drops": ""
+  },
+  {
+    "episode": 6,
+    "reward": 3.092503547668457,
+    "length": 94,
+    "episode_reward": [
+      3.092503547668457
+    ],
+    "episode_length": 94,
+    "lines": 0,
+    "hard_drops": 23,
+    "rotations": 3,
+    "left_moves": 32,
+    "right_moves": 36,
+    "soft_drops": ""
+  },
+  {
+    "episode": 7,
+    "reward": 3.3134984970092773,
+    "length": 89,
+    "episode_reward": [
+      3.3134984970092773
+    ],
+    "episode_length": 89,
+    "lines": 0,
+    "hard_drops": 24,
+    "rotations": 2,
+    "left_moves": 26,
+    "right_moves": 37,
+    "soft_drops": ""
+  },
+  {
+    "episode": 8,
+    "reward": 2.3985066413879395,
+    "length": 102,
+    "episode_reward": [
+      2.3985066413879395
+    ],
+    "episode_length": 102,
+    "lines": 0,
+    "hard_drops": 13,
+    "rotations": 28,
+    "left_moves": 15,
+    "right_moves": 40,
+    "soft_drops": ""
+  },
+  {
+    "episode": 9,
+    "reward": 3.359999179840088,
+    "length": 79,
+    "episode_reward": [
+      3.359999179840088
+    ],
+    "episode_length": 79,
+    "lines": 0,
+    "hard_drops": 23,
+    "rotations": 4,
+    "left_moves": 21,
+    "right_moves": 31,
+    "soft_drops": ""
+  },
+  {
+    "episode": 10,
+    "reward": 3.6229968070983887,
+    "length": 91,
+    "episode_reward": [
+      3.6229968070983887
+    ],
+    "episode_length": 91,
+    "lines": 0,
+    "hard_drops": 25,
+    "rotations": 4,
+    "left_moves": 28,
+    "right_moves": 34,
+    "soft_drops": ""
+  },
+  {
+    "episode": 11,
+    "reward": 4.8434929847717285,
+    "length": 89,
+    "episode_reward": [
+      4.8434929847717285
+    ],
+    "episode_length": 89,
+    "lines": 1,
+    "hard_drops": 24,
+    "rotations": 10,
+    "left_moves": 31,
+    "right_moves": 24,
+    "soft_drops": ""
+  },
+  {
+    "episode": 12,
+    "reward": 2.8330039978027344,
+    "length": 90,
+    "episode_reward": [
+      2.8330039978027344
+    ],
+    "episode_length": 90,
+    "lines": 0,
+    "hard_drops": 20,
+    "rotations": 18,
+    "left_moves": 20,
+    "right_moves": 28,
+    "soft_drops": ""
+  },
+  {
+    "episode": 13,
+    "reward": 3.2780003547668457,
+    "length": 95,
+    "episode_reward": [
+      3.2780003547668457
+    ],
+    "episode_length": 95,
+    "lines": 0,
+    "hard_drops": 23,
+    "rotations": 10,
+    "left_moves": 29,
+    "right_moves": 33,
+    "soft_drops": ""
+  },
+  {
+    "episode": 14,
+    "reward": 2.737004280090332,
+    "length": 87,
+    "episode_reward": [
+      2.737004280090332
+    ],
+    "episode_length": 87,
+    "lines": 0,
+    "hard_drops": 21,
+    "rotations": 5,
+    "left_moves": 33,
+    "right_moves": 28,
+    "soft_drops": ""
+  },
+  {
+    "episode": 15,
+    "reward": 2.812504768371582,
+    "length": 98,
+    "episode_reward": [
+      2.812504768371582
+    ],
+    "episode_length": 98,
+    "lines": 0,
+    "hard_drops": 20,
+    "rotations": 1,
+    "left_moves": 30,
+    "right_moves": 34,
+    "soft_drops": ""
+  },
+  {
+    "episode": 16,
+    "reward": 3.1285018920898438,
+    "length": 92,
+    "episode_reward": [
+      3.1285018920898438
+    ],
+    "episode_length": 92,
+    "lines": 0,
+    "hard_drops": 25,
+    "rotations": 9,
+    "left_moves": 26,
+    "right_moves": 32,
+    "soft_drops": ""
+  },
+  {
+    "episode": 17,
+    "reward": 3.47299861907959,
+    "length": 84,
+    "episode_reward": [
+      3.47299861907959
+    ],
+    "episode_length": 84,
+    "lines": 0,
+    "hard_drops": 26,
+    "rotations": 3,
+    "left_moves": 27,
+    "right_moves": 28,
+    "soft_drops": ""
+  },
+  {
+    "episode": 18,
+    "reward": 2.9980039596557617,
+    "length": 88,
+    "episode_reward": [
+      2.9980039596557617
+    ],
+    "episode_length": 88,
+    "lines": 0,
+    "hard_drops": 24,
+    "rotations": 10,
+    "left_moves": 18,
+    "right_moves": 36,
+    "soft_drops": ""
+  },
+  {
+    "episode": 19,
+    "reward": 4.547991752624512,
+    "length": 102,
+    "episode_reward": [
+      4.547991752624512
+    ],
+    "episode_length": 102,
+    "lines": 1,
+    "hard_drops": 22,
+    "rotations": 17,
+    "left_moves": 30,
+    "right_moves": 33,
+    "soft_drops": ""
+  },
+  {
+    "episode": 20,
+    "reward": 3.028503894805908,
+    "length": 99,
+    "episode_reward": [
+      3.028503894805908
+    ],
+    "episode_length": 99,
+    "lines": 0,
+    "hard_drops": 22,
+    "rotations": 3,
+    "left_moves": 28,
+    "right_moves": 40,
+    "soft_drops": ""
+  },
+  {
+    "episode": 21,
+    "reward": 2.4865059852600098,
+    "length": 93,
+    "episode_reward": [
+      2.4865059852600098
+    ],
+    "episode_length": 93,
+    "lines": 0,
+    "hard_drops": 17,
+    "rotations": 9,
+    "left_moves": 23,
+    "right_moves": 25,
+    "soft_drops": ""
+  },
+  {
+    "episode": 22,
+    "reward": 3.870495319366455,
+    "length": 89,
+    "episode_reward": [
+      3.870495319366455
+    ],
+    "episode_length": 89,
+    "lines": 0,
+    "hard_drops": 26,
+    "rotations": 1,
+    "left_moves": 24,
+    "right_moves": 38,
+    "soft_drops": ""
+  },
+  {
+    "episode": 23,
+    "reward": 2.9050040245056152,
+    "length": 85,
+    "episode_reward": [
+      2.9050040245056152
+    ],
+    "episode_length": 85,
+    "lines": 0,
+    "hard_drops": 21,
+    "rotations": 4,
+    "left_moves": 20,
+    "right_moves": 38,
+    "soft_drops": ""
+  },
+  {
+    "episode": 24,
+    "reward": 3.6539974212646484,
+    "length": 84,
+    "episode_reward": [
+      3.6539974212646484
+    ],
+    "episode_length": 84,
+    "lines": 0,
+    "hard_drops": 25,
+    "rotations": 5,
+    "left_moves": 22,
+    "right_moves": 31,
+    "soft_drops": ""
+  },
+  {
+    "episode": 25,
+    "reward": 3.242001533508301,
+    "length": 96,
+    "episode_reward": [
+      3.242001533508301
+    ],
+    "episode_length": 96,
+    "lines": 0,
+    "hard_drops": 24,
+    "rotations": 11,
+    "left_moves": 23,
+    "right_moves": 38,
+    "soft_drops": ""
+  },
+  {
+    "episode": 26,
+    "reward": 2.927504062652588,
+    "length": 99,
+    "episode_reward": [
+      2.927504062652588
+    ],
+    "episode_length": 99,
+    "lines": 0,
+    "hard_drops": 20,
+    "rotations": 17,
+    "left_moves": 22,
+    "right_moves": 26,
+    "soft_drops": ""
+  },
+  {
+    "episode": 27,
+    "reward": 2.79500150680542,
+    "length": 57,
+    "episode_reward": [
+      2.79500150680542
+    ],
+    "episode_length": 57,
+    "lines": 0,
+    "hard_drops": 19,
+    "rotations": 4,
+    "left_moves": 19,
+    "right_moves": 15,
+    "soft_drops": ""
+  },
+  {
+    "episode": 28,
+    "reward": 3.0145039558410645,
+    "length": 85,
+    "episode_reward": [
+      3.0145039558410645
+    ],
+    "episode_length": 85,
+    "lines": 0,
+    "hard_drops": 22,
+    "rotations": 8,
+    "left_moves": 19,
+    "right_moves": 36,
+    "soft_drops": ""
+  },
+  {
+    "episode": 29,
+    "reward": 3.589498996734619,
+    "length": 81,
+    "episode_reward": [
+      3.589498996734619
+    ],
+    "episode_length": 81,
+    "lines": 0,
+    "hard_drops": 24,
+    "rotations": 4,
+    "left_moves": 27,
+    "right_moves": 26,
+    "soft_drops": ""
+  },
+  {
+    "episode": 30,
+    "reward": 5.010992050170898,
+    "length": 100,
+    "episode_reward": [
+      5.010992050170898
+    ],
+    "episode_length": 100,
+    "lines": 1,
+    "hard_drops": 26,
+    "rotations": 11,
+    "left_moves": 30,
+    "right_moves": 33,
+    "soft_drops": ""
+  }
+]

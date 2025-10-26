@@ -1,15 +1,15 @@
 # *Assignment 1 – Deep Reinforcement Learning for Automated Testing*
 
 This project implements a **Deep Reinforcement Learning (DRL) testing framework** that automates gameplay and interaction testing across two environments:
-- 🕹 **Tetris** (2D game)
-- 🌐 **Web Navigation App** (multi-page flow)
+-  **Tetris** (2D game)
+-  **Web Navigation App** (multipage flow)
 
 The goal is to **detect risky behaviors and regressions automatically** using trained DRL agents (not scripted bots).  
 Agents learn different *testing personas* by optimizing distinct reward functions.
 
 ---
 
-## 🎯 Objectives
+##  Objectives
 **Goal 1 — Issue Detection via Rewards:**  
 Design reward functions that highlight specific faults or risky behaviors (e.g., crashes, timeouts, stuck states).
 
@@ -18,7 +18,7 @@ Collect in-game and app-level metrics automatically per episode and aggregate th
 
 ---
 
-## 🏗️ Project Architecture
+## ️ Project Architecture
 ````
 tetris/
 │
@@ -43,7 +43,7 @@ The codebase is fully **decoupled** between environment definitions, training lo
 
 ---
 
-## ⚙️ Setup
+##  Setup
 
 ### Requirements
 - Python 3.12+
@@ -60,7 +60,7 @@ python -m venv .venv
 .\.venv\Scripts\activate  # (Windows)
 pip install -r requirements.txt
 ```
-## 🧩 Training
+##  Training
 ### Example: PPO on Tetris
 ````
 python -m src.train --algo ppo --app tetris --persona survivor \
@@ -80,7 +80,7 @@ python -m src.train --algo a2c --app tetris --persona explorer \
 python -m src.train --algo ppo --app web --persona survivor --steps 200000 --device cpu
 ````
 
-## 🔍 Evaluation
+##  Evaluation
 Run trained agents and collect metrics (CSV + JSON):
 ````
 python -m src.eval --algo ppo --app tetris --persona survivor \
@@ -95,15 +95,15 @@ logs/
  │   └─ tetris-ppo-survivor-7.csv
  └─ screenshots/              # optional gameplay captures
 ````
-## 🧠 Personas (Reward Designs)
-| Persona  | Description | Reward Signal |
-|:--------:|:-----------:|:-------------:|
-| Survivor |   Prioritizes longevity and stability    |    +1 per step survived, −10 per death     |
-|   Explorer    |  Encourages risk-taking and state coverage   |      +5 per new area visited, −5 per repeated states      |
+##  Personas (Reward Designs)
+| Persona  |                Description                |                  Reward Signal                  |
+|:--------:|:-----------------------------------------:|:-----------------------------------------------:|
+| Survivor |    Prioritizes longevity and stability    |       +1 per step survived, −10 per death       |
+| Explorer | Encourages risk-taking and state coverage | +5 per new area visited, −5 per repeated states |
 
 These reward functions yield contrasting behaviors, helping simulate different QA testing personas.
 
-## 📊 Metrics Collected
+##  Metrics Collected
 Automatically logged at both episode and aggregate levels:
 - **Game**: Lines cleared, episode length, reward, survival time.
 - Stored as `.csv` and `.json`.
@@ -111,14 +111,14 @@ Automatically logged at both episode and aggregate levels:
 [//]: # (- **Web**: Unique pages reached, clicks per session, validation errors.)
 
 #### Tensorboard chart
-![alt text](images/ep_len_mean.png "Chart that shows step vs value")
+![alt text](docs/plots/ep_len_mean.png "Chart that shows step vs value")
 #### Legend
-- A2C_5 - A2C Algorithm on Survivor Persona
-- A2C_8 - A2C Algorithm on Explorer Persona
-- PPO_2 - PPO Algorithm on Survivor Persona
-- PPO_3 - PPO Algorithm on Explorer Persona
+- <i style="color:#27BBF5;">A2C_5 - A2C Algorithm on Survivor Persona</i>
+- <i style="color:#BA007C;">A2C_8 - A2C Algorithm on Explorer Persona</i>
+- <i style="color:#FFDD00;">PPO_2 - PPO Algorithm on Survivor Persona</i>
+- <i style="color:#80FF73;">PPO_3 - PPO Algorithm on Explorer Persona</i>
 
-## 📈 Results Summary
+##  Results Summary
 ### Learning Curves
 
 |       Metric        |               PPO               |         A2C         | Observation                           |
@@ -132,7 +132,7 @@ Automatically logged at both episode and aggregate levels:
 ### Interpretation:
 PPO agents demonstrate smoother and more stable learning, achieving higher episode lengths and more consistent performance. A2C converges faster initially but plateaus at a lower reward ceiling.
 
-## 📦 Reproducibility
+## Reproducibility
 
 - Fixed random seeds (--seed 7)
 - Deterministic PyTorch + Gym setup
@@ -140,18 +140,41 @@ PPO agents demonstrate smoother and more stable learning, achieving higher episo
 - Dependencies pinned in requirements.txt
 - Logs + metrics exportable for reproducibility
 
-Example command to fully reproduce:
+## Run Commands for each Persona and Algorithm
+
+### Train PPO
 ````
 python -m src.train --algo ppo --app tetris --persona survivor --steps 500000 --seed 7 --device cuda
-python -m src.eval  --algo ppo --app tetris --persona survivor --model models/ppo_tetris_survivor.zip --episodes 30 --device cuda
+````
+### Train A2C
+````
+python -m src.train --algo a2c --app tetris --persona survivor --steps 500000 --frame-stack 4 --device cpu --seed 42 --save models/a2c_tetris_survivor
 ````
 
-## 📜 License
+### Evaluate PPO
+````
+python -m src.eval  --algo ppo --app tetris --persona survivor --model models/ppo_tetris_survivor.zip --episodes 30 --device cuda
+````
+### Evaluate A2C
+````
+python -m src.eval --algo a2c --app tetris --persona survivor --model models/a2c_tetris_survivor.zip --episodes 30 --frame-stack 4 --device cpu
+````
+
+### Visualize PPO Gameplay
+````
+python visualize.py --model_path models/ppo_tetris_survivor --fps 60
+````
+### Visualize A2C Gameplay
+````
+python visualize.py --model_path models/a2c_tetris_survivor --fps 60
+````
+
+## Requirements
+
+````
+pip install -r requirements.txt
+````
+
+## License
 MIT License © 2025 Ontario Tech University
 For educational and research use only.
-
-
-### ✅ Notes
-- The `docs/tensorboard_results.png` placeholder should be replaced with your screenshot (the one you uploaded earlier).
-- If your web environment isn’t finalized, you can rename it to “App 2” for now; it still satisfies the two-app requirement.
-- This README alone covers every rubric category (architecture, reward design, metrics, reproducibility, and results).
