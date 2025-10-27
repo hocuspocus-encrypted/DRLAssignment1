@@ -1,0 +1,5 @@
+reward:
+  hit: 0.1
+  miss: -10.0
+  alive: 0.5
+notes: "Survivor persona favors survival; heavy penalty for misses."

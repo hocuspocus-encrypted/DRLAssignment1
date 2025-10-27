@@ -1,0 +1,6 @@
+seed: 7
+device: cpu
+timesteps: 200000
+outdir: models
+logs: logs
+results: results

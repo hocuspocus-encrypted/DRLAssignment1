@@ -1,0 +1,5 @@
+env: pong
+width: 400
+height: 300
+paddle_h: 60
+max_steps: 2000

@@ -1,0 +1,7 @@
+Required libraries
+numpy==1.23.5
+gym==0.21.0
+stable-baselines3==1.8.0
+PyYAML==6.0
+matplotlib==3.7.1
+pandas==2.1.1
