@@ -4,7 +4,7 @@ Vibhavan Saibuvis, 100872481
 
 This project implements a **Deep Reinforcement Learning (DRL) testing framework** that automates gameplay and interaction testing across two environments:
 -  **Tetris** (2D game)
--  **Web Navigation App** (multipage flow)
+-  **Pong** (2D game)
 
 The goal is to **detect risky behaviors and regressions automatically** using trained DRL agents (not scripted bots).  
 Agents learn different *testing personas* by optimizing distinct reward functions.
